@@ -86,8 +86,9 @@ CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态�
 |-|-|-|-|
 |code||string(40)|通过 H5+APP 请求登录授权获得的当前用户登录 code|
 |refresh_token||string(40)|通过之前调用该接口获取的 refresh_toke 获取最新的 auth_token|
+|grant_type|是|string|是获取或者刷新 auth_token，authorization_code 表示获取，refresh_toke 表示 刷新 |
 
-> code 、refresh_toke 二选一，不可两个都提供
+> code 、refresh_toke 二选一，根据 grant_type 确认哪个有效
 
 **返回值：**
 
