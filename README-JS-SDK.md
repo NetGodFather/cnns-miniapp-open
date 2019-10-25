@@ -109,9 +109,9 @@ CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态�
 > 与服务端接口文档的 “in_order" 数据结构一致
 
 ### 设置横屏或者竖屏
-**请求方法：** screenOrientation
-**是否异步：** 是
-**方法说明：** 将当前整个屏幕调整为横屏(portrait) 或者 竖屏 (landscape)
+**请求方法：** screenOrientation  
+**是否异步：** 是  
+**方法说明：** 将当前整个屏幕调整为横屏(portrait) 或者 竖屏 (landscape)  
 **请求参数：** 
 
 | 参数 | 类型 | 说明 |
