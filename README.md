@@ -13,6 +13,9 @@ CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态�
 [CNNS H5小程序开放平台(JS-SDK接入文档)](https://github.com/NetGodFather/cnns-minapp-open/blob/master/README-JS-SDK.md)
 
 [CNNS H5小程序开放平台服务端对接文档](https://github.com/NetGodFather/cnns-minapp-open/blob/master/README-SERVER.md)
+
+[CNNS H5小程序 DEMO (PHP)](https://github.com/NetGodFather/cnns-miniapp-sdk)
+
 ## 开放形式
 平台当前开放的形式，是通过将第三方使用H5开发的应用，内嵌到 CNNS 生态下的 APP 中，并通过APP以及HTTP服务，为应用开发者提供各种额外的功能。
 > 所有开放的功能，都需要提前申请才可以使用。
