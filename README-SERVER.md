@@ -77,6 +77,7 @@ CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态�
 **请求方式：** POST  
 **接口说明：** 通过 APP+H5 前端登录获取的验证码( code )，获取当前用户授权登录的相关信息。或者通过 refresh_token 获取新的 auth_token ，以避免 auth_token 过期。每调用一次 auth_token 和 refresh_token 都会更新，老的 token 在 10分钟后失效，以确保通信安全和稳定；  
 **请求参数：**  
+
 |参数|是否必填|数据类型|说明|
 |-|-|-|-|
 |code||string(40)|通过 H5+APP 请求登录授权获得的当前用户登录 code|
