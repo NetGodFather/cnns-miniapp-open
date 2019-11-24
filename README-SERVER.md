@@ -134,7 +134,7 @@ CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态�
 ### 创建收款订单
 **接口方法：** open.pay.inorder.create  
 **请求方式：** POST  
-**接口说明：** app 创建向用户收款的订单，如果创建成功，将返回创建的订单对象。  
+**接口说明：** app 创建向用户收款的订单，如果创建成功，将返回创建的订单对象。如果使用人民币计价的订单，下单时会根据当前的价格，折算为 CNNS 数量
 **请求参数：**
 
 |参数|是否必填|数据类型|说明|
@@ -142,8 +142,9 @@ CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态�
 |open_id|Yes|string(40)|下单的用户open_id（必须传相匹配的 auth_token 参数）|
 |in_order_id|Yes|string(32)|应用端的关联的订单编号(32位字符串)|
 |title|Yes|string(50)|所购买商品的描述（100个字符以内）|
-|coin_id|Yes|string(20)|所需要扣款的币种编号|
-|amount|Yes|float|需要支付的金额|
+|coin_id|Yes|string(20)|所需要扣款的币种编号，当前请设置为 cnns |
+|amount|No|float|需要支付的数量，与rmb_amount 二选一|
+|rmb_amount|No|float|以人民币标价的需要支付的数量，与 amount 二选一|
 |state|No|string(100)|额外附加的自定义参数（100个字符以内)|
 
 **返回值：**
@@ -224,6 +225,8 @@ CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态�
 |open_id|下单用户编号|string(20)|下单用户的 open_id 编号|
 |coin_id|币种编号|string(20)|下单支付的币种编号|
 |amount|支付数量|float|下单支付的数量|
+|rmb_amount|人民币|float|下单支付的人民币金额，只有下单传了rmb_amount的订单此参数才有效|
+|coin_price|价格|float|下单传了rmb_amount 的订单此参数才有效，表示折算为币种的|
 |state|附件参数|string(100)|下单时候所提供的附加参数|
 |status|订单状态|int|1: 待支付 2: 支付中 3 :支付成功 4: 支付失败|
 |fail_code|失败编码|string|用于代码中识别失败原因（如果支付失败，未失败为空）|
