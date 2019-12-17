@@ -6,6 +6,7 @@
    * [帐号对接](###帐号对接)
    * [数字货币收款](###数字货币收款)
    * [数字货币付款](###数字货币付款)
+* [快速接入](#快速接入)
 
 ## 概述
 CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态内各个APP能力的一个开放应用平台。本文档为接入的框架指南，详细的接口与SDK说明，请查看相关文档。
@@ -15,6 +16,8 @@ CNNS H5小程序开放平台是对外提供第三方H5 APP对接进CNNS 生态�
 [CNNS H5小程序开放平台服务端对接文档](https://github.com/NetGodFather/cnns-minapp-open/blob/master/README-SERVER.md)
 
 [CNNS H5小程序 DEMO (PHP)](https://github.com/NetGodFather/cnns-miniapp-sdk)
+
+[CNNS H5小程序开放平台游戏应用快速接入方案](https://github.com/NetGodFather/cnns-quick-login) 
 
 ## 开放形式
 平台当前开放的形式，是通过将第三方使用H5开发的应用，内嵌到 CNNS 生态下的 APP 中，并通过APP以及HTTP服务，为应用开发者提供各种额外的功能。
@@ -56,3 +59,7 @@ CNNS H5 小程序平台，当前对外开放的核心功能有：
 1. 应用确认需要转账用户和币种以及数量；
 2. 调用 open.pay.out_order.create 创建付款订单，该创建过程是同步的，即调用立即会返回是否付款成功；
 3. 如果调用出现异常，可以通过 open.pay.out_order.info 查询，确认是否付款成功，避免重复付款；
+
+
+## 快速接入
+为了方便部分H5游戏应用服务商可以更便捷的接入，特提供了一种非常快速，开放量极少的对接方式。详情请参考 [CNNS H5小程序开放平台游戏快速登录方案](https://github.com/NetGodFather/cnns-quick-login) ；
