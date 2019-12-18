@@ -62,4 +62,4 @@ CNNS H5 小程序平台，当前对外开放的核心功能有：
 
 
 ## 快速接入
-为了方便部分H5游戏应用服务商可以更便捷的接入，特提供了一种非常快速，开放量极少的对接方式。详情请参考 [CNNS H5小程序开放平台游戏快速登录方案](https://github.com/NetGodFather/cnns-quick-login) ；
+为了方便部分H5游戏应用服务商可以更便捷的接入，特提供了一种非常快速，开放量极少的对接方式。详情请参考 [CNNS H5小程序开放平台游戏快速登录方案](https://github.com/NetGodFather/cnns-miniapp-open/blob/master/RADME-QUICK-LOGIN.md)  ；
